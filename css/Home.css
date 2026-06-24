@@ -1,39 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 13 | background:$background-5;
+ *    |            ^^^^^^^^^^^^^
+ *    '
+ *   scss\Home.scss 13:12  root stylesheet */
 
-.nav {
-  display: flex;
-  padding: 16px 24px;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-  background: #EEEEEB;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502  background:$background-5;\d\a    \2502             ^^^^^^^^^^^^^\a    \2575 \a   scss\\Home.scss 13:12  root stylesheet";
 }
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid red;
-}
-
-.logo {
-  display: flex;
-  height: 25px;
-  align-items: center;
-  gap: 16px;
-  border: 1px solid red;
-}
-
-.btn {
-  background-image: url("assets/images/Link.svg");
-  text-align: right;
-  font-feature-settings: "liga" off, "calt" off;
-  border: none;
-}
-
-/*# sourceMappingURL=Home.css.map */
