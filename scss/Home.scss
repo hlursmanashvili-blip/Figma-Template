@@ -6,13 +6,12 @@
 .nav{
     display: flex;
     width:100%;
+    position:relative;
 padding: 16px 24px;
 justify-content: space-between;
 align-items: center;
 align-self: stretch;
-background:$background-5;
-
-
+background:colors.$background-4;
 }
 .nav-content{
  display: flex;
@@ -20,6 +19,7 @@ justify-content: space-between;
 align-items: center;
 gap:50px;
 width:100%;
+
  }
 
 .logo{
@@ -29,15 +29,39 @@ align-items: center;
 gap: 16px;
 
 }
+.menu{
+    // position: relative;
+    // border: 1px solid red;
 
-details {
-    position: relative;
 }
+.menu-btn{
+    border: none;
+}
+.menu:hover .dropdown-menu {
+    display: block;
+}
+
 .dropdown-menu {
-  position: absolute;
+position: absolute;
+display:none;
   top: 100%;
-  right: 0;
-  background-color: aqua;
+  left: 0;
+background: colors.$background-4;
+width:100vw;
+padding:56px 28px;
 }
-
+.dropdown-menu ul{
+    list-style: none;
+    display: flex;
+    gap:48px;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.dropdown-menu ul a{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        color:colors.$background-2;
+}
 }
