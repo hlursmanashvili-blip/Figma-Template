@@ -1,0 +1,26 @@
+@use "../abstracts/colors";
+
+.btn{
+display: flex;
+width: 375px;
+flex-direction: column;
+padding: 25px;
+justify-content: center;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+border-radius: 500px;
+border:none;
+background-color: colors.$background-3;
+margin: 56px 0;;
+
+a{
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height:17.6px; 
+letter-spacing: 1.6px;
+text-decoration: none;
+color:white;
+}}
