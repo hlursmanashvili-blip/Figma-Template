@@ -23,14 +23,14 @@ width:100%;
 }
 .logo-caption{
     display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
 }
 .menu{
     position: relative;
-  display: inline-block;
-      height: auto;
+    display: inline-block;
+    height: auto;
     display: flex;
     align-items: center;
 
@@ -66,12 +66,12 @@ padding:56px 28px 0px 28px;
 
 }
 .dropdown-menu ul{
+     @include mixins.flex-center;
     list-style: none;
-    display: flex;
     gap:48px;
     flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .dropdown-menu ul a{
         font-size: 32px;
@@ -107,32 +107,14 @@ align-self: stretch;
 }
 
 .nav{
-display: flex;
+@include mixins.flex-center;
 width: 100%;
 padding: 24px 48px;
-justify-content: center;
-align-items: center;
 background: var(--Background-background-3, rgba(68, 66, 62, 0.80));
 
 }
-.nav-content{
- display: flex; 
-justify-content: space-between;
-align-items: center;
-width:100%;
-}
-.logo-caption {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
-}
 .inline-menu {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @include mixins.flex-center;
 }
 .inline-menu ul {
     display: flex;
@@ -150,11 +132,9 @@ width:100%;
     font-size: 14px;
      font-weight: 400;
      font-style: normal;
-
 }
 .title {
     height: 205px;
-    
 }
 
 }
