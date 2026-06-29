@@ -115,7 +115,7 @@
 
 .title {
   width: 100%;
-  height: auto;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +125,7 @@
 
 .title img {
   max-width: 100%;
-  height: 110px;
+  height: 100%;
 }
 
 .inline-menu {
@@ -178,19 +178,11 @@
     font-style: normal;
   }
   .title {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 63px 48px 48px 48px;
-    align-self: stretch;
-  }
-  .title img {
-    max-width: 100%;
-    height: 110px;
-    display: block;
+    height: 205px;
   }
 }
-
-/*# sourceMappingURL=Home.css.map */
+@media (min-width: 1024px) {
+  .title {
+    height: 264px;
+  }
+}/*# sourceMappingURL=Home.css.map */
