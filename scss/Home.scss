@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "base/reset";
 @use "abstracts/colors";
+@use "layout/middle";
 @media (max-width:675px)
 {
 .nav{

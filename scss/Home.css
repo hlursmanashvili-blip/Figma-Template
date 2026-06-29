@@ -5,6 +5,12 @@
   font-size: 62.5%;
 }
 
+.middle_container {
+  background-image: url(scss/assets/images/middle_bg.png);
+  height: 480px;
+  width: 100%;
+}
+
 @media (max-width: 675px) {
   .nav {
     display: flex;
