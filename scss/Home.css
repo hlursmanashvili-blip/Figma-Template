@@ -5,6 +5,22 @@
   font-size: 62.5%;
 }
 
+footer {
+  width: 100%;
+  background: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 @media (max-width: 675px) {
   .nav {
     display: flex;
@@ -40,4 +56,6 @@
     border: 1px solid #ccc;
     min-width: 150px;
   }
-}/*# sourceMappingURL=Home.css.map */
+}
+
+/*# sourceMappingURL=Home.css.map */
