@@ -5,6 +5,38 @@
   font-size: 62.5%;
 }
 
+.middle {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-container {
+  width: 100%;
+  max-width: 1290px;
+  height: 400px;
+  background-image: url(assets/images/middle_bg_1280.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-text {
+  max-width: 505px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.middle p {
+  color: white;
+  font-size: clamp(16px, 3vw, 30px);
+  text-align: center;
+}
+
 .btn {
   display: flex;
   flex-direction: column;
