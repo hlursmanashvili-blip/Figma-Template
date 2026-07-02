@@ -1,0 +1,51 @@
+@use "../abstracts/colors";
+.links{
+    width:100%;
+  display: grid;
+   justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+    background-color: colors.$background-1;
+
+   
+} 
+.card1{
+    width: 320px;
+    height: 320px;
+    background-image: url("assets/images/Link-card-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    .card2 {
+     width: 320px;
+  height: 320px;
+
+  background-image: url("assets/images/Link card 2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+
+ 
+    }
+      .card3{
+    width: 320px;
+    height: 320px;
+    background-image: url("assets/images/Link card 3.svg");
+   background-repeat: no-repeat;
+    }
+  .card4{
+  width: 320px;
+    height: 320px;
+    background-image: url("assets/images/Link card 4.svg");
+   background-repeat: no-repeat;
+    }
+
+@media (min-width: 676px) {
+  .links {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 32px;
+  }
+}
