@@ -1,5 +1,34 @@
-.middle_container {
-    background-image: url(scss/assets/images/middle_bg.png);
-    height:480px;
+.middle {
+    width:100%;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+&-container {
     width: 100%;
+    max-width: 1290px;
+    height: 400px;
+    background-image: url(assets/images/middle_bg_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    &-text {
+        max-width: 505px;
+        margin:20px;
+        display:flex;
+        flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
+        gap:20px;
+    }
+    p {
+        color: white;
+        font-size: clamp(16px, 3vw, 30px);
+        text-align: center;
+    }
 }
